@@ -1,0 +1,14 @@
+name: assignment_2
+channels:
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.8
+  - pytorch=1.7
+  - torchvision
+  - numpy
+  - nltk
+  - ipython
+  - docopt
+  - pip:
+    - tqdm

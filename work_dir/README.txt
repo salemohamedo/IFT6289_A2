@@ -1,0 +1,1 @@
+This work_dir folder is where the model saves the model parameters and the decoding results.
