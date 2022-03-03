@@ -25,12 +25,12 @@ def input_transpose(sents, pad_token):
     sents_padded = []
 
     ### WRITE YOUR CODE HERE (~5 lines)
-
-
+    max_sent_len = max(map(len, sents))
+    np_sents = np.array([sent + [pad_token]*(max_sent_len - len(sent)) for sent in sents])
+    sents_padded = np_sents.transpose().tolist()
     ### END OF YOUR CODE HERE
 
     return sents_padded
-
 
 def read_corpus(file_path, source):
     data = []
